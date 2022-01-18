@@ -1,0 +1,23 @@
+ALGORITHM sentense
+VAR
+    nb_m,nb_v,i,lg_p,sentence:INTEGER
+BEGIN
+    Write("put a sentence here")
+    Read(sentence)
+    lg_p:= len(sentence)
+    nb_m:=0
+    nb_v:=0
+    FOR i FROM 1 TO lg_p STEP step  DO
+        IF Mid(sentence, i, 1):=" " THEN
+            nb_m:= nb_m+1
+        ELSE
+            Mid(Bla, i, 1) := "a" ou Mid(Bla, i, 1) := "e" ou 
+            Mid(Bla, i, 1) := "i" ou Mid(Bla, i, 1) := "o" ou 
+            Mid(Bla, i, 1) := "u" ou Mid(Bla, i, 1) := "y"
+            nb_v:= nb_v+1
+        END_IF
+    END_FOR
+    Write("the lenght of the sentence is: ", lg_p)
+    Write("The number of words in the sentence: ", nb_m)
+    Write("The number of vowels in the sentence: ", nb_v)
+END
